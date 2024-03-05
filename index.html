@@ -1,0 +1,176 @@
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Roboto:wght@700&display=swap');
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Judson&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/great-vibes" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="description">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="animation.css">
+    <script src="animation.js"></script>
+    <title>Catalina Website</title>
+</head>
+<body>
+    <section id="home" class="hidden md:flex lg:flex bg-[url('background.jpg')] h-full w-full bg-no-repeat bg-cover">
+        <nav id="menu" class="flex fixed hover:shadow-red-500/40 duration-500 shadow-lg top-0 z-10 flex-row h-24 font-sans text-xl font-bold text-white bg-zinc-800/50 w-full">
+            <ul class="flex flex-row p-4 justify-center items-center space-x-16 ml-16">
+                <li class="uppercase">
+                    <a id="menu-button" href="#home" data-target="home" data-replace="home" class=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-8 h-8 transition duration-300 ease-in-out hover:scale-110">
+                        <path d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
+                        <path d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
+                      </svg>
+                      </a>
+                </li>
+                <li class="uppercase transition duration-300 ease-in-out hover:scale-110">
+                    <a id="menu-button" href="#about" data-target="about" data-replace="about us"><span>Despre Noi</span></a>
+                </li>
+            </ul>
+            <div class="flex flex-row pr-16 justify-center items-center space-x-12 ml-auto">
+                <img class="h-52 w-52" src="new_conthelp.png">
+                <a href="#contact" class="transition duration-300 ease-in-out hover:scale-110"><img src="facebook.svg" class="w-8 h-8 cursor-pointer"></a>
+                <a href="#contact" class="transition duration-300 ease-in-out hover:scale-110"><img src="whatsapp.svg" class="w-8 h-8 cursor-pointer"></a>
+            </div>
+        </nav>
+        <div class="flex justify-center items-center w-96 font-sans flex-col space-y-32">
+            <article class="flex text-6xl mt-96 md:mt-48 2xl:mt-96 ml-48 text-red-600 font-bold">
+                Tu crești valoarea, noi ordonăm profitul!
+            </article>
+            <div class="flex flex-row cursor-pointer justify-center items-center ml-96 w-96 space-x-4 transition duration-300 ease-in-out hover:scale-110 rounded-full border-2 border-red-600">
+                <div class="uppercase text-red-600 font-bold text-3xl">
+                    <a id="menu-button" href="#contact" data-target="contact" data-replace="contact us"><span>Contactează-ne</span></a>
+                </div>
+                <svg class="w-8 h-8 cursor-pointer" fill="#dc2626" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 122.27" style="enable-background:new 0 0 122.88 122.27" xml:space="preserve"><g><path d="M33.84,50.25c4.13,7.45,8.89,14.6,15.07,21.12c6.2,6.56,13.91,12.53,23.89,17.63c0.74,0.36,1.44,0.36,2.07,0.11 c0.95-0.36,1.92-1.15,2.87-2.1c0.74-0.74,1.66-1.92,2.62-3.21c3.84-5.05,8.59-11.32,15.3-8.18c0.15,0.07,0.26,0.15,0.41,0.21 l22.38,12.87c0.07,0.04,0.15,0.11,0.21,0.15c2.95,2.03,4.17,5.16,4.2,8.71c0,3.61-1.33,7.67-3.28,11.1 c-2.58,4.53-6.38,7.53-10.76,9.51c-4.17,1.92-8.81,2.95-13.27,3.61c-7,1.03-13.56,0.37-20.27-1.69 c-6.56-2.03-13.17-5.38-20.39-9.84l-0.53-0.34c-3.31-2.07-6.89-4.28-10.4-6.89C31.12,93.32,18.03,79.31,9.5,63.89 C2.35,50.95-1.55,36.98,0.58,23.67c1.18-7.3,4.31-13.94,9.77-18.32c4.76-3.84,11.17-5.94,19.47-5.2c0.95,0.07,1.8,0.62,2.25,1.44 l14.35,24.26c2.1,2.72,2.36,5.42,1.21,8.12c-0.95,2.21-2.87,4.25-5.49,6.15c-0.77,0.66-1.69,1.33-2.66,2.03 c-3.21,2.33-6.86,5.02-5.61,8.18L33.84,50.25L33.84,50.25L33.84,50.25z"/></g></svg>
+            </div>
+        </div>
+    </section>
+        
+    <section id="home" class="flex md:hidden lg:hidden bg-zinc-800 h-[50%] w-full justify-center items-start">
+        <nav id="menu" class="flex fixed hover:shadow-red-500/40 duration-500 shadow-lg top-0 z-10 flex-row h-24 font-sans text-xl font-bold text-white bg-zinc-800/50 w-full">
+            <ul class="flex flex-row p-4 justify-center items-center space-x-16 ml-16">
+                <li class="uppercase">
+                    <a id="menu-button" href="#home" data-target="home" data-replace="home" class=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-8 h-8 transition duration-300 ease-in-out hover:scale-110">
+                        <path d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
+                        <path d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
+                      </svg>
+                      </a>
+                </li>
+                <li class="uppercase transition duration-300 ease-in-out hover:scale-110">
+                    <a id="menu-button" href="#about" data-target="about" data-replace="about us"><span>Despre Noi</span></a>
+                </li>
+            </ul>
+            <img class="h-32 w-32" src="new_conthelp.png">
+        </nav>
+        <h1 class="flex text-4xl text-red-600 font-bold ml-8 mt-48">
+            Tu crești valoarea, noi ordonăm profitul!
+        </h1>
+    </section>
+
+
+
+    <section id="about" class="hidden md:flex lg:flex flex flex-row bg-[url('bg.jpeg')] bg-no-repeat bg-cover h-[80%] w-full justify-center items-center space-x-52">
+        <div class="ml-48 border-transparent border-2 hover:border-red-600 rounded-sm">
+            <a href="https://www.facebook.com/elenacatalina.pasare?locale=ro_RO"><img class="rounded-sm delay-[300ms] duration-[600ms] taos:[transform:translate3d(-200px,200px,0)] taos:opacity-0" data-taos-offset="300" src="img.jpeg"></a>
+        </div>
+        <div class="flex flex-col justify-start items-center h-96 w-auto">
+            <div class="flex flex-row justify-center items-center">
+                <h1 class="text-red-600 font-bold text-3xl">Cătălina Pasăre</h1>
+                <img id="pencil" class="w-32 h-32 animate-bounce" src="pencil.png">
+            </div>
+            <p class="w-[500px] text-white text-xl">
+                Cătălina Păsăre este o specialistă în domeniul contabilității, cunoscută pentru abilitățile sale deosebite și dedicarea față de meseria sa. Cu o experiență solidă în gestionarea finanțelor și a documentelor contabile, Cătălina este recunoscută pentru atenția sa la detalii și pentru capacitatea de a rezolva probleme complexe într-un mod eficient și precis. Cu o abordare proactivă și o pasiune pentru cifre, ea este capabilă să ofere consultanță și soluții contabile adaptate nevoilor specifice ale clienților săi.
+            </p>
+        </div>
+    </section>
+
+    <section id="about" class="flex md:hidden lg:hidden bg-zinc-800 h-[50%] w-full justify-center items-center">
+        <div class="border-transparent border-2 hover:border-red-600 rounded-sm">
+            <a href="https://www.facebook.com/elenacatalina.pasare?locale=ro_RO"><img class="rounded-sm delay-[300ms] duration-[600ms] taos:[transform:translate3d(-200px,200px,0)] taos:opacity-0" data-taos-offset="300" src="img.jpeg"></a>
+        </div>
+    </section>
+
+    <section id="about" class="flex md:hidden lg:hidden bg-zinc-800 h-auto w-full justify-center items-start">
+        <div class="flex flex-col justify-start items-center h-96 w-auto">
+            <div class="flex flex-row justify-center items-center">
+                <h1 class="text-red-600 font-bold text-3xl">Cătălina Pasăre</h1>
+                <img id="pencil" class="w-32 h-32 animate-bounce" src="pencil.png">
+            </div>
+            <p class="w-72 text-white text-xl">
+                Cătălina Păsăre este o specialistă în domeniul contabilității, cunoscută pentru abilitățile sale deosebite și dedicarea față de meseria sa. Cu o experiență solidă în gestionarea finanțelor și a documentelor contabile, Cătălina este recunoscută pentru atenția sa la detalii și pentru capacitatea de a rezolva probleme complexe într-un mod eficient și precis. Cu o abordare proactivă și o pasiune pentru cifre, ea este capabilă să ofere consultanță și soluții contabile adaptate nevoilor specifice ale clienților săi.
+            </p>
+        </div>
+    </section>
+
+
+
+    <section id="contact" class="hidden md:flex lg:flex flex bg-[url('bg.jpeg')] bg-no-repeat bg-cover h-[60%] w-full justify-center items-center">
+        <div class="flex justify-start items-center mt-24">   
+            <div class="flex-col-2">
+                <div class="flex text-center text-red-600 text-5xl font-bold uppercase animate-bounce">Contactează-ne!</div>
+                    <div class="flex flex-row">
+                        <span><img class="flex mt-16 w-8 h-8" src="fillemail.png" /></span>
+                        <div class="flex ml-4 mt-16 w-56 text-center text-neutral-200 text-2xl font-just-another-hand uppercase">pasarecatalina973@GMAIL.COM</div>
+                    </div>
+                <div class="flex flex-row" >
+                        <span><img class="flex mt-16 w-8 h-8" src="facebook.svg" /></span>
+                        <div class="flex ml-4 mt-16 w-56 text-center text-neutral-200 text-2xl font-just-another-hand uppercase">PASĂRE CĂTĂLINA</div>
+                </div>
+                <div class="flex flex-row" >
+                    <span><img class="flex mt-16 w-8 h-8" src="whatsapp.svg" /></span>
+                    <div class="flex ml-4 mt-16 w-56 text-center text-neutral-200 text-2xl font-just-another-hand uppercase">+40 733 278 437</div>
+            </div>      
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="contact" class="flex md:hidden lg:hidden bg-zinc-800 h-auto w-full justify-center items-center">
+        <div class="flex justify-start items-center mt-96">   
+            <div class="flex-col-2">
+                <div class="flex text-center text-red-600 text-4xl font-bold uppercase animate-bounce">Contactează-ne!</div>
+                    <div class="flex flex-row justify-center items-center">
+                        <span><img class="flex mt-16 w-8 h-8" src="fillemail.png" /></span>
+                        <div class="flex mt-16 w-56 text-center text-neutral-200 text-lg font-just-another-hand uppercase">pasarecatalina973@GMAIL.COM</div>
+                    </div>
+                <div class="flex flex-row justify-center items-center" >
+                        <span><img class="flex mt-16 w-8 h-8" src="facebook.svg" /></span>
+                        <div class="flex mt-16 w-56 text-center text-neutral-200 text-lg font-just-another-hand uppercase">PASĂRE CĂTĂLINA</div>
+                </div>
+                <div class="flex flex-row justify-center items-center" >
+                    <span><img class="flex mt-16 w-8 h-8" src="whatsapp.svg" /></span>
+                    <div class="flex mt-16 w-56 text-center text-neutral-200 text-lg font-just-another-hand uppercase">+40 733 278 437</div>
+                </div>      
+            </div>
+        </div>
+    </section>
+
+    <section class="flex bg-zinc-800 md:hidden lg:hidden justify-center items-center h-32  w-full ">
+        <h1 class="text-white text-bold text-xl ">Copyright © 2024 Cont Help
+        </h1>
+    </section>
+
+
+    <footer class="hidden md:flex lg:flex bg-[url('bg.jpeg')] bg-no-repeat bg-cover h-24 w-full justify-center items-center">
+        <h1 class="text-red-600 text-bold text-xl ">Copyright © 2024 Cont Help
+        </h1>
+    </footer>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
